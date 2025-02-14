@@ -1,0 +1,97 @@
+
+/*--------------------main--------------------*/
+
+main figure picture img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em;
+}
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 150%;
+    background-color: #e7e7e7;
+    padding: .5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+main h2 span {
+    font-weight: bold;
+}
+
+main div {
+    max-width: 100vw;
+    margin: 3em 1em;
+    display: flex;
+    gap: 1em;
+}
+
+/*--------------------media queries--------------------*/
+
+@media only screen and (width < 800px) {
+
+    main figure picture img {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 0;
+        margin: 0 1em;
+
+    }
+
+    main h2 {
+        margin: 1.5em 0;
+    }
+
+    main h2:first-child {
+        margin-top: 0;
+    }
+
+    main div {
+        margin: 1em;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (height < 700px) {
+
+    main figure picture img {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 0;
+        margin: 0 1em;
+
+    }
+
+    main h2 {
+        margin: 1.5em 0;
+    }
+
+    main h2:first-child {
+        margin-top: 0;
+    }
+
+    main div {
+        margin: 1em;
+        flex-direction: column;
+    }
+
+}
